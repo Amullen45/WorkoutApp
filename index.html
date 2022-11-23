@@ -1,29 +1,33 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="workout.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/workout.js"></script>
+    <title> LIVT - Home </title>
 </head>
+<body>
+
 <h1>
     Welcome to LIVT
 </h1>
-<body>
-    <button type="button" id="chestday"
-    onclick="chestWorkout(fullChest)">
-        Chest Day
-    </button>
-    <p>Chest day workout is:<input type="text" id="wod"></p>
-</body>
 
+<button type="button" id="chestday" onclick=todaysWorkout();chestWorkout(fullChest)>
+    Chest Day
+</button>
 
-
-
-
+<p id="wodtext"></p>
+<p id="wod"></p>
 
 <footer>
-    <ul>
-        <li><a href="home">Home</a></li>
-        <li><a href="library">Library</a></li>
-        <li><a href="stats">Stats</a></li>
-        <li><a href="settings">Settings</a></li>
-    </ul>
+    <a id="sitemap" href="index.html">Home</a>
+    <a id="sitemap" href="html/library.html">Library</a>
+    <a id="sitemap" href="html/stats.html">Stats</a>
+    <a id="sitemap" href="html/settings.html">Settings</a>
 </footer>
+
+</body>
+</html>
