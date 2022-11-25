@@ -11,9 +11,9 @@
 <body>
     Library
     <div>
-        <form><!--action="update database/right now array"-->
-            <label for="wname">workout</label>
-            <input type="text" id="wname" name="wname" value="Workout"><br> <!--value that gets put into DB/Array-->
+        <form name="workoutLibrary" id="workoutLibrary"><!--action="update database/right now array"-->
+            <label for="wname">Workout:</label>
+            <input type="text" id="wname" name="wname" value="Workout"><br><br> <!--value that gets put into DB/Array-->
             <label for="mgroup">Muscle Group</label> <!--value that dicates where "workout" will get placed-->
             <select id="mgroup" name="mgroup" value="">
                 <option value="">Select Muscle Group</option>
@@ -23,14 +23,14 @@
                 <option value="">Sub-muscle Group (if-applicable)</option>
             </select><br><br>
             <label for="equpiment">Equipment</label><!--classifying eequpiment needed-->
-            <select id="equipment" name="equipment" value="">
+            <select id="equipment" name="equipment" value="Equipment">
                 <option value="barbell">Barbell</option>
                 <option value="dumbbell">Dumbbell</option>
                 <option value="kettlebell">Kettlebell</option>
                 <option value="resistant-bands">Resistant-Bands</option>
                 <option value="none">None</option>
             </select>
-        </form>>
+        </form>
     </div>
 </body>
 <footer>

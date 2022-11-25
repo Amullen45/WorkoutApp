@@ -3,34 +3,33 @@ var subjectObject = {
       "Upper",
       "Middle",
       "Lower",
-      "Misc",   
+      "Misc"  
     },
     "Back": {
         "Upper",
         "Middle",
-        "Lower",
+        "Lower"
     },
     "Arms": {
       "Bicep",
       "Tricep",
-      "Forearm",
+      "Forearm"
     },
     "Legs": {
         "Quads",
         "Glutes",
-        "Hamstring",
+        "Hamstring"
     },
     "Shoulders": {
         "Anterior",
         "Lateral",
-        "Posterior",
+        "Posterior"
     },
     "Calves"
   }
   window.onload = function() {
-    //subjectSel
+
     var mGroupSel = document.getElementById("mgroup");
-    //topicSel
     var sGroupSel = document.getElementById("sgroup");
 
     for (var x in subjectObject) {
