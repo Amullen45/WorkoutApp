@@ -1,32 +1,32 @@
 var subjectObject = {
-    "Chest": {
-      "Upper",
+    "Chest": [
+        "Upper",
       "Middle",
       "Lower",
       "Misc"  
-    },
-    "Back": {
+    ],
+    "Back": [
         "Upper",
         "Middle",
         "Lower"
-    },
-    "Arms": {
+    ],
+    "Arms": [
       "Bicep",
       "Tricep",
       "Forearm"
-    },
-    "Legs": {
+    ],
+    "Legs": [
         "Quads",
         "Glutes",
         "Hamstring"
-    },
-    "Shoulders": {
+    ],
+    "Shoulders": [
         "Anterior",
         "Lateral",
         "Posterior"
-    },
+    ],
     "Calves"
-  }
+  };
   window.onload = function() {
 
     var mGroupSel = document.getElementById("mgroup");
