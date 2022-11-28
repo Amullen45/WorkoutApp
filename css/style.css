@@ -9,21 +9,34 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 10px 0;
+  text-align:center;
+}
+
+.icon-bar {
+  width: 100%;
   background-color: grey;
+  overflow: auto;
 }
 
-footer > #sitemap {
+.icon-bar a {
+  float:left;
+  align-items: flex-start;
+  width:22%;
+  padding: 12px 0;
+  transition: all 0.3s ease;
   color: rgb(243, 239, 17);
-  padding: 10px;
-  text-decoration: none;
-  font-style: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 36px;
+  margin:0 auto;
 }
 
-footer > #sitemap:hover {
+
+.icon-bar a:hover {
   background-color:  rgb(243, 239, 17);
   color:black ;
+}
+
+.active {
+  background-color: black;
 }
 
 label {
