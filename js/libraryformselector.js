@@ -37,7 +37,7 @@ window.onload = function() {
     muscleGroupSel.options[muscleGroupSel.options.length] = new Option(x, x);
   }
   muscleGroupSel.onchange = function() {
-    //empty Chapters- and Topics- dropdowns
+    //empty Sub-Muscle Group dropdowns
     subMuscleGroupSel.length = 1;
     //display correct values
     var muscleGroup = muscleGroupObject[this.value]
