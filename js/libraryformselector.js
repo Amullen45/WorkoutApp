@@ -1,32 +1,33 @@
 var subjectObject = {
-    "Chest": {
-        "Upper":[],
-      "Middle":[],
-      "Lower":[],
-      "Misc":[] 
-    },
-    "Back": {
-        "Upper":[],
-        "Middle":[],
-        "Lower":[]
-    },
-    "Arms": {
-      "Bicep":[],
-      "Tricep":[],
-      "Forearm":[]
-    },
-    "Legs": {
-        "Quads":[],
-        "Glutes":[],
-        "Hamstring":[]
-    },
-    "Shoulders": {
-        "Anterior":[],
-        "Lateral":[],
-        "Posterior":[]
-    },
-    "Calves":[]
+    "Chest": [
+        "Upper",
+      "Middle",
+      "Lower",
+      "Misc"  
+    ],
+    "Back": [
+        "Upper",
+        "Middle",
+        "Lower"
+    ],
+    "Arms": [
+      "Bicep",
+      "Tricep",
+      "Forearm"
+    ],
+    "Legs": [
+        "Quads",
+        "Glutes",
+        "Hamstring"
+    ],
+    "Shoulders": [
+        "Anterior",
+        "Lateral",
+        "Posterior"
+    ],
+    "Calves"
   };
+
   window.onload = function() {
 
     var mGroupSel = document.getElementById("mgroup");
