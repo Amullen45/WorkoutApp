@@ -25,3 +25,7 @@ footer > #sitemap:hover {
   background-color:  rgb(243, 239, 17);
   color:black ;
 }
+
+label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

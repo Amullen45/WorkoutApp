@@ -5,10 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/libraryformselector.js"></script>
     <title>Library</title>
 </head>
 <body>
-    Library
+    <h1>Library</h1>
+    <div>
+        <form name="workoutLibrary" id="workoutLibrary"><!--action="update database/right now array"-->
+            <label for="wname">Workout:</label>
+            <input type="text" id="wname" name="wname" value="Workout"><br><br> <!--value that gets put into DB/Array-->
+            <label for="mgroup">Muscle Group</label> <!--value that dicates where "workout" will get placed-->
+            <select id="mgroup" name="mgroup" value="">
+                <option value="">Select Muscle Groups</option>
+            </select><br><br>
+            <label for="sgroup">Sub-muscle Group</label><!--value that dicates where "workout" will get placed-->
+            <select id="sgroup" name="sgroup" value="">
+                <option value="">Sub-muscle Group (if-applicable)</option>
+            </select>
+            <br><br>
+            <label for="equpiment">Equipment</label><!--classifying equipment needed-->
+            <select id="equipment" name="equipment" value="" default="Equipment">
+                <option value="barbell">Barbell</option>
+                <option value="dumbbell">Dumbbell</option>
+                <option value="kettlebell">Kettlebell</option>
+                <option value="resistant-bands">Resistant-Bands</option>
+                <option value="none">None</option>
+            </select>
+        </form>
+    </div>
 </body>
 <footer>
     <a id = "sitemap" href="/index.html">Home</a>
