@@ -1,6 +1,6 @@
-var subjectObject = {
+var muscleGroupObject = {
     "Chest": [
-        "Upper",
+      "Upper",
       "Middle",
       "Lower",
       "Misc"  
@@ -25,23 +25,24 @@ var subjectObject = {
         "Lateral",
         "Posterior"
     ],
-    "Calves"
+    "Calves":[]
   };
 
-  window.onload = function() {
+window.onload = function() {
 
-    var mGroupSel = document.getElementById("mgroup");
-    var sGroupSel = document.getElementById("sgroup");
+  var muscleGroupSel = document.getElementById("mgroup");
+  var subMuscleGroupSel = document.getElementById("sgroup");
 
-    for (var x in subjectObject) {
-      mGroupSel.options[mGroupSel.options.length] = new Option(x, x);
+  for (var x in muscleGroupObject) {
+    muscleGroupSel.options[muscleGroupSel.options.length] = new Option(x, x);
+  }
+  muscleGroupSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    subMuscleGroupSel.length = 1;
+    //display correct values
+    var muscleGroup = muscleGroupObject[this.value]
+    for (var y in muscleGroupObject[this.value]) {
+      subMuscleGroupSel.options[subMuscleGroupSel.options.length] = new Option(muscleGroup[y], y);
     }
-    mGroupSel.onchange = function() {
-      //empty Chapters- and Topics- dropdowns
-      sGroupSel.length = 1;
-      //display correct values
-      for (var y in subjectObject[this.value]) {
-        sGroupSel.options[sGroupSel.options.length] = new Option(y, y);
-      }
-    }
-    }
+  }
+}
