@@ -24,9 +24,9 @@ var subjectObject = {
         "Anterior",
         "Lateral",
         "Posterior"
-    ],
-    "Calves"
+    ]
   };
+
   window.onload = function() {
 
     var mGroupSel = document.getElementById("mgroup");
