@@ -6,7 +6,7 @@ h1 {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   text-align:center;
@@ -41,6 +41,10 @@ footer {
 
 label {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+  height:fit-content;
 }
 
 button {
