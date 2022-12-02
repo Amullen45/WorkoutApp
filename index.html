@@ -11,10 +11,10 @@
     <title> LIVT - Home </title>
 </head>
 <body>
-
-<h1>
-    Welcome to LIVT
-</h1>
+<div class="flexbox-h1">
+    <h1>Welcome to LIVT</h1>
+</div>
+<div class="flexbox-table">
 <table>
     <tr>
         <th>Monday</th>
@@ -35,16 +35,18 @@
         <td class="daily">posted</td>
     </tr>
 </table> <br>
-<button type="button" id="chestday" onclick=todaysWorkout();chestWorkout(fullChest)>
-    Chest Day
-</button><br><br>
-<button type="button" id="legday" onclick=todaysWorkout()>Leg Day</button><br><br>
-<button type="button" id="legday" onclick=todaysWorkout()>Arm Day</button><br><br>
-<button type="button" id="legday" onclick=todaysWorkout()>Back Day</button><br><br>
-<button type="button" id="legday" onclick=todaysWorkout()>Misc Day</button><br><br>
-<p id="wodtext"></p>
-<p id="wod"></p>
-
+</div>
+<div class="container-workout">
+    <p class="workout" id="wodtext"></p>
+    <p class="workout" id="wod"></p>
+    <div class="flexbox-button">
+        <button type="button" id="chestday" onclick=todaysWorkout();chestWorkout(fullChest)>Chest Day</button>
+        <button type="button" id="legday" onclick=todaysWorkout()>Leg Day</button>
+        <button type="button" id="legday" onclick=todaysWorkout()>Arm Day</button>
+        <button type="button" id="legday" onclick=todaysWorkout()>Back Day</button>
+        <button type="button" id="legday" onclick=todaysWorkout()>Misc Day</button>
+    </div>
+</div>
 <footer>
     <div class="icon-bar">
         <a id="sitemap" href="index.html"><i class="fa fa-home"></i></a>

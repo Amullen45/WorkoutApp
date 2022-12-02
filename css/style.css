@@ -5,38 +5,49 @@ h1 {
   background-color: #fff000;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align:center;
+table {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  border-style: double;
+  flex-direction: row;
+  border: black;
+  background-color: red;
+  align-content: center;
 }
 
-.icon-bar {
-  width: 100%;
-  background-color: grey;
-  overflow: auto;
+td {
+
+  border-style: solid;
+  padding: 10px;
 }
 
-.icon-bar a {
-  float:left;
-  align-items: flex-start;
-  width:22%;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  color: #fff000;
-  font-size: 36px;
-  margin:0 auto;
+th {
+  border-style:2px black;
+  background-color: #fff000;
 }
 
-
-.icon-bar a:hover {
-  background-color:  #fff000;
-  color:black ;
+.daily {
+  border-style: dashed;
+  text-align: center;
 }
 
-.active {
-  background-color: black;
+.container-workout {
+  display: flex;
+  background-color: green;
+}
+
+.flexbox-button {
+  margin-left:auto;
+  align-items: center;
+  display: flex;
+  width:35%;
+  background-color: #000;
+  flex-direction: column;
+}
+.workout {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: red;
 }
 
 label {
@@ -44,10 +55,12 @@ label {
 }
 
 p {
-  height:fit-content;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 button {
+  margin: 5px;
+  align-items: flex-end;
   background-color: #fff000;
   border-radius: 12px;
   color: #000;
@@ -58,7 +71,6 @@ button {
   transition: 200ms;
   width: 100%;
   box-sizing: border-box;
-  border: 0;
   font-size: 16px;
   user-select: none;
   -webkit-user-select: none;
@@ -78,19 +90,36 @@ button {
   cursor: not-allowed;
 }
 
-table, th, td {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  align-items: center;
-  border-style: solid;
-  padding: 10px;
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align:center;
+  justify-content: space-between;
 }
 
-th {
-  border-style:2px black;
-  background-color: #fff000;
+.icon-bar {
+  width: 100%;
+  background-color: grey;
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
 }
 
-.daily {
-  border-style:dashed;
-  text-align: center;
+.icon-bar a {
+  width:100%;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: #fff000;
+  font-size: 36px;
+  margin:0px;
+}
+
+.icon-bar a:hover {
+  background-color:  #fff000;
+  color:black ;
+}
+
+.active {
+  background-color: black;
 }
